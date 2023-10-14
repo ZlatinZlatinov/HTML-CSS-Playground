@@ -1,0 +1,27 @@
+.ar-16x9{
+    /* width: 1280px;
+    height: 720px; */
+    overflow: hidden;
+    background: #000;
+    margin: 2em auto;
+    position: relative;
+    /* top: 50%;
+    left: 50%;
+    transform: translateX(-50%); */
+} 
+
+.ar-16x9:after{
+    display: block;
+    content: '';
+    padding-top: 56.25%;
+}
+
+.ar-16x9 img {
+    display: block;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+}
