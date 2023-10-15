@@ -1,0 +1,11 @@
+@import url(reset.css); 
+
+@import url(typography.css); /*Типография*/ 
+
+@import url(layout.css); /*Подредбата на сайта*/ 
+
+@import url(navigation.css); /*Навигацията на страницата*/ 
+
+@import url(aspect-ratio.css); /*ddz*/ 
+
+@import url(presentation.css);

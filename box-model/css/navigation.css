@@ -1,0 +1,54 @@
+.main-nav {}
+
+.main-nav ul {
+    padding: 0;
+}
+
+.main-nav li {
+    list-style: none outside;
+    position: relative;
+}
+
+.main-nav>ul>li {
+    display: inline-block;
+    margin-left: 1em;
+}
+
+.main-nav a {
+    text-decoration: none;
+    display: block;
+    padding: 0.5em 0.8em;
+    background-color: white;
+    color: #369;
+    border-radius: 8px;
+    border: 2px solid #369;
+}
+
+.main-nav li:hover > a,
+.main-nav a:hover {
+    background-color: #369;
+    color: white;
+    transition: ease-in 0.5s;
+}
+
+.main-nav ul ul {
+    display: none;
+}
+
+.main-nav li:hover > ul {
+    display: block;
+    position: absolute;
+    top: 100%;
+    right: 0;
+} 
+
+.main-nav>ul>li>ul li {
+    margin: 0.2em 0em;
+}
+
+/*If you have more nested menus*/
+/* .main-nav ul ul li:hover > ul {
+    left: initial;
+    top: 0;
+    right: 100%;
+} */
