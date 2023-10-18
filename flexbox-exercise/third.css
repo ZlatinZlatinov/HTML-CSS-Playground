@@ -1,0 +1,28 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+} 
+
+html {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+} 
+
+.container {
+    padding: 2em;
+    display: flex;
+    max-width: 15vw;
+    height: 24rem;
+    flex-direction: column;
+    flex-wrap: wrap;
+    /* align-items: center; */
+    gap: 0.2em;
+} 
+
+span {
+    flex-grow: 0;
+    padding: 0.5em;
+    border: 1px solid black;
+    text-align: center;
+}
