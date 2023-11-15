@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Book Reviews</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header site">
+        <!-- Logo -->
+        <p class="site-logo">
+            <a href="#"><img src="images/logo2b.png" alt="site-logo"></a>
+        </p>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+
+        <!-- User Icon -->
+        <div class="user">
+            <ul class="user-icon">
+                <li><a href="#" class="icn"><i class="fa-regular fa-circle-user"></a></i>
+                    <ul>
+                        <li><a href="#">Create</a></li>
+                        <li><a href="#">My Profile</a></li>
+                        <li><a href="#">My Favourites</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <hr>
+
+    <!-- Main -->
+    <main class="site-main site">
+
+        <!-- Slider -->
+        <div id="slider">
+            <input type="radio" name="slider" id="slide1" checked>
+            <input type="radio" name="slider" id="slide2">
+            <input type="radio" name="slider" id="slide3">
+            <input type="radio" name="slider" id="slide4">
+
+            <div id="slides">
+                <div id="overflow">
+                    <div class="inner">
+                        <!-- Slider Item 1 -->
+                        <div class="slide slide_1">
+                            <div class="slide-content">
+                                <article class="slide-text">
+                                    <header>
+                                        <h2>Life Of The Wild</h2>
+                                    </header>
+                                    <p>
+                                        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ipsum animi tempora
+                                        incidunt exercitationem ad ipsam nam! Voluptatem unde rerum, inventore, eius
+                                        voluptatum soluta debitis repudiandae vitae ut ipsa amet perferendis!
+                                    </p>
+                                    <footer>
+                                        <p>
+                                            <a href="#" class="btn-read">Read More <i
+                                                    class="fa-solid fa-arrow-right-long"></i></a>
+                                        </p>
+                                    </footer>
+                                </article>
+
+                                <div class="slide-img">
+                                    <img src="images/main-banner1.jpg" alt="">
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Slider Item 2 -->
+                        <div class="slide slide_2">
+                            <div class="slide-content">
+                                <h2>Slide 2</h2>
+                                <p>Slide 2 content</p>
+                            </div>
+                        </div>
+
+                        <!-- Slider Item 3 -->
+                        <div class="slide slide_3">
+                            <div class="slide-content">
+                                <h2>Slide 3</h2>
+                                <p>Slide 3 content</p>
+                            </div>
+                        </div>
+
+                        <!-- Slider Item 4 -->
+                        <div class="slide slide_4">
+                            <div class="slide-content">
+                                <h2>Slide 4</h2>
+                                <p>Slide 4 content</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Slider Controls -->
+            <div id="controls">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+
+            <div id="bullets">
+                <label for="slide1"></label>
+                <label for="slide2"></label>
+                <label for="slide3"></label>
+                <label for="slide4"></label>
+            </div>
+        </div>
+    </main>
+
+    <hr>
+
+    <!-- Site Footer -->
+    <footer class="site-footer site">
+        <p>&copy; 2023 All rights reserved.</p>
+
+        <ul class="socials">
+            <li><a href="#"><i class="fa-brands fa-meta"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+    </footer>
+
+    <script>
+        const innerElement = document.querySelector("div.inner");
+        let margin = 0;
+
+        setInterval(() => {
+            innerElement.style.marginLeft = `${margin}%`;
+            margin -= 100;
+
+            if (margin < -300) {
+                margin = 0;
+            }
+
+        }, 4000);
+
+    </script>
+</body>
+
+</html>

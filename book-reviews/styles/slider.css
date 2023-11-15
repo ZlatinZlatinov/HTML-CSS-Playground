@@ -1,0 +1,188 @@
+#slider {
+    margin: 0 auto;
+    /* width: 800px;*/
+    width: 100%;
+    height: auto;
+    /* height: 100vh; */
+    text-align: center;
+}
+
+#slider input[type=radio] {
+    display: none;
+}
+
+#slider label {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#slides {
+    /* padding: 30px; */
+    /* border: 3px solid #ccc; */
+    /* background-color: #fff; */
+    position: relative;
+    z-index: 1;
+}
+
+#overflow {
+    width: 100%;
+    overflow: hidden;
+}
+
+#slide1:checked~#slides .inner {
+    margin-left: 0;
+}
+
+#slide2:checked~#slides .inner {
+    margin-left: -100%;
+}
+
+#slide3:checked~#slides .inner {
+    margin-left: -200%;
+}
+
+#slide4:checked~#slides .inner {
+    margin-left: -300%;
+}
+
+#slides .inner {
+    transition: margin-left 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+    width: 400%;
+    /* line-height: 0; */
+    /* height: 200px; */
+}  
+
+#slides .slide {
+    width: 25%;
+    float: left;
+    display: block; 
+    height: 100%;
+    color: #fff;
+} 
+
+/* 
+#slides .slide_1 {
+    background-color: #00171F;
+}
+
+#slides .slide_2 {
+    background-color: #003459;
+}
+
+#slides .slide_3 {
+    background-color: #007EA7;
+}
+
+#slides .slide_4 {
+    background-color: #00A8E8;
+}  */
+
+#controls {
+    margin-top: -130px;
+    width: 100%;
+    height: 50px;
+    z-index: 3;
+    position: relative;
+}
+
+#controls label{
+    transition: opacity 0.2s ease-out;
+    display: none;
+    width: 50px;
+    height: 50px;
+    opacity: .4;
+}
+
+#controls label:hover{
+    opacity: 1;
+} 
+
+/* #slide1:checked ~ #controls label:nth-child(2), 
+#slide1:checked ~ #controls label:nth-child(3), 
+#slide1:checked ~ #controls label:nth-child(4),
+#slide1:checked ~ #controls label:nth-child(1)::after {
+    content: url(https://cdn-icons-png.flaticon.com/128/271/271228.png);
+    color: black;
+    float: left;
+    margin-left: -50px;
+    display: block;
+} 
+
+#slide1:checked ~ #controls label:nth-last-child(2), 
+#slide1:checked ~ #controls label:nth-last-child(3), 
+#slide1:checked ~ #controls label:nth-last-child(4),
+#slide1:checked ~ #controls label:nth-last-child(1)::before {
+    content: url(https://cdn-icons-png.flaticon.com/128/271/271220.png);
+    color: black;
+    float: right;
+    margin-right: -50px;
+    display: block;
+}  */
+
+#bullets{
+    margin: 100px 0 0;
+    text-align: center;
+} 
+
+#bullets label {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #ccc;
+    margin: 0 10px;
+    border-radius: 50%;
+} 
+
+.slide-content{
+    display: flex;
+    justify-content: center;
+    /* justify-content: space-between; */
+    align-items: center;
+    gap: 4em;
+    /* flex-wrap: wrap; */
+} 
+
+.slide-text {
+    max-width: 56ch;
+    color: #777;
+    font-size: 1.6em;
+    flex-basis: 60%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 2em;
+    margin-top: 5.5em;
+}
+
+.slide-text h2 {
+    color: black;
+    font-family: serif;
+    font-size: 3em;
+} 
+
+.slide-img {
+    flex-basis: 30%;
+} 
+
+.slide-img img {
+    display: block;
+    width: 100%;
+    height: auto;
+} 
+
+.btn-read {
+    font-size: 1.2em;
+    text-decoration: none;
+    padding: 6px 12px;
+    color: #c5a992;
+    border: 1px solid #c5a992;
+} 
+
+.btn-read:hover {
+    border-color: #a75e30;
+    color: #a75e30;
+    padding: 6px 20px;
+    transition: padding 0.3s ease-in;
+}
+

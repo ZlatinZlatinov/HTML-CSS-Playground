@@ -1,0 +1,116 @@
+
+.form-container {
+    padding-top: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    height: 100%;
+    width: 100%;
+}
+
+.form-container.active {
+    right: 0;
+}
+
+.form-container form {
+    background: #fff;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    width: 35.5rem;
+    padding: 2rem;
+    box-shadow: 0 0 10px #43414f70;
+    border-radius: 0.5rem;
+    margin-bottom: 10rem;
+    /* height: auto; */
+    font-size: 1.5em;
+    /*width: 30%;*/
+}
+
+.form-container form h3 {
+    font-size: 1.5em;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    color: #444;
+    text-align: center;
+}
+
+.form-container form label {
+    display: block;
+    font-size: 1.2em;
+    padding-top: 1rem;
+    color: #777;
+} 
+
+.form-container form input:not(.btn) {
+    font-size: 0.8em;
+}
+
+.form-container form .box {
+    width: 100%;
+    margin: 0.7rem 0;
+    font-size: 0.9rem;
+    border: 0.1rem solid rgba(0, 0, 0, 0.1);
+    border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
+    color: #444;
+    text-transform: none;
+}
+
+.form-container form .checkbox {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 1rem 0;
+}
+
+.form-container form .checkbox label {
+    font-size: 1.5rem;
+    color: #666;
+    cursor: pointer;
+}
+
+.form-container form .btn {
+    text-align: center;
+    width: 100%;
+    margin: 1.5rem 0;
+    padding: 0.6em 1.2em;
+    font-size: 1em;
+}
+
+.form-container form p {
+    padding-top: 0.8rem;
+    color: #666;
+    font-size: 1rem;
+}
+
+.form-container form p a {
+    color: #27ae60;
+    text-decoration: underline;
+}
+
+.form-container #close-login-btn {
+    position: absolute;
+    top: 1.5rem;
+    right: 2.5rem;
+    font-size: 5rem;
+    color: #444;
+    cursor: pointer;
+}
+
+.form-container form .error {
+    text-align: center;
+    padding-top: 0.8rem;
+    color: red;
+    font-size: 0.75em;
+}
+
+.form-container .input-error {
+    width: 100%;
+    margin: 0.7rem 0;
+    font-size: 0.9rem;
+    border: 1px solid red;
+    border-radius: 0.5rem;
+    padding: 1rem 1.2rem;
+    color: #444;
+    text-transform: none;
+}
