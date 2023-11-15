@@ -1,0 +1,137 @@
+section:not(:last-child) {
+    border-bottom: 1px solid #c5a992;
+    padding-bottom: 1em;
+    margin-bottom: 2em;
+}
+
+
+/* ---- Details ---- */
+section.book-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 4em;
+} 
+
+.book-details img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    object-position: center;
+} 
+
+.book-details .img-details {
+    flex: 1 1 25%;
+}
+
+.book-details .book-content {
+    flex: 1 1 60%;
+    display: flex;
+    flex-direction: column;
+    padding: 3em 0em;
+} 
+
+.book-content p {
+    font-size: 1.5em;
+    max-width: 77ch;
+    
+}
+
+.book-title{
+    font-size: 3.5em;
+    align-self: flex-start;
+    max-width: 30ch;
+    margin-bottom: 1.2em;
+} 
+
+.book-descritpion{
+    text-indent: 1.5em;
+    text-align: justify;
+    letter-spacing: 1.2px;
+} 
+
+.option-btns{
+    display: flex;
+    justify-content: start;
+    gap: 3em;
+} 
+
+.btn {
+    padding: 0.6em 1em;
+    background-color: #c5a992;
+    border: 2px solid #c5a992;
+    color: white;
+    font-size: 1.6em;
+    text-decoration: none;
+    border-radius: 0.5em;
+} 
+
+.btn:hover {
+    border: 2px solid #af815b;
+} 
+
+/* ---- Comments --- */ 
+
+section h3 {
+    font-size: 2.5em;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.comment-list {
+    max-height: 25vh;
+    overflow: scroll;
+}
+
+.comment-wrapper{
+    border: solid 0.5px rgb(212, 200, 193);
+    width: 95%; 
+    padding-left: 15px; 
+    border-radius: 10px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin: 1em auto;
+    display: flex;
+    gap: 1em;
+    align-items: center;
+} 
+
+.comment-wrapper header {
+    padding: 1em;
+    border-right: 1px solid #c5a992;
+}
+
+.comment-wrapper h4 {
+    font-size: 1.4em;
+    letter-spacing: 1px;
+    text-transform: capitalize;
+}
+.comment-wrapper p {
+    padding: 1em;
+    font-size: 1.2em;
+    max-width: 100ch;
+} 
+
+.comment-wrapper h4 i {
+    font-size: 1.5em;
+}
+
+/* ---- Leave Comment ---- */ 
+
+.submit-comment {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.submit-comment textarea {
+    width: 95%;
+    height: 10em;
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 10px;
+} 
+
+.submit-comment .btn {
+    width: 15em;
+}
+

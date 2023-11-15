@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Book Reviews</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header site">
+        <!-- Logo -->
+        <p class="site-logo">
+            <a href="#"><img src="images/logo2b.png" alt="site-logo"></a>
+        </p>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+
+        <!-- User Icon -->
+        <div class="user">
+            <ul class="user-icon">
+                <li><a href="#" class="icn"><i class="fa-regular fa-circle-user"></a></i>
+                    <ul>
+                        <li><a href="#">Create</a></li>
+                        <li><a href="#">My Profile</a></li>
+                        <li><a href="#">My Favourites</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <hr>
+
+    <!-- Main -->
+    <main class="site-main site">
+        <section class="book-details">
+            <div class="img-details">
+                <img src="https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/k/r/4a0294e4fa392c09c7d02252e9ca4bec/kratki-otgovori-na-golemite-vaprosi-30.jpg"
+                    alt="kratki-otgovori-na-golemite-vaprosi">
+            </div>
+
+            <div class="book-content">
+                <h2 class="book-title">Кратки Отговори На Големите Въпроси</h2>
+
+                <p class="book-author">Author: Стивън Хокинг</p>
+                <p class="pub">Publisher: Бард</p>
+                <p class="likes">Likes: 10</p>
+
+                <p class="book-descritpion">
+                    В „Кратки отговори на големите въпроси“ световноизвестният космолог, автор на бестселъра „Кратка
+                    история на времето“ и един от най-великите умове на нашето време ни напуска с последните си мисли за
+                    най-големите въпроси на вселената. В сътрудничество с фондация „Стивън Хокинг“ Джон Мъри води
+                    издатели от целия свят в глобално почитане на забележителния живот на професор Хокинг в този важен
+                    момент за научнопопулярната литература. Книгата, върху която Стивън Хокинг е работил, преди да си
+                    отиде, черпи от изключително богатия му личен архив и е съставена в сътрудничество с академичните му
+                    колеги, семейството му и фондация „Стивън Хокинг“.
+                </p>
+
+                <div class="option-btns">
+                    <a href="#" class="delete-btn btn">Delete <i class="fa-solid fa-trash-can"></i></a>
+                    <a href="#" class="edit-btn btn">Edit <i class="fa-solid fa-pen-to-square"></i></a>
+                    <a href="#" class="like-btn btn">Like <i class="fa-regular fa-thumbs-up"></i></a>
+                    <a href="#" class="favourites-btn btn">Add to favourites <i class="fa-solid fa-plus"></i></a>
+                </div>
+            </div>
+        </section>
+
+        <section class="comments">
+            <h3>Comments</h3>
+            <div class="comment-list">
+                <article class="comment-wrapper">
+                    <header class="author-post">
+                        <h4><i class="fa-regular fa-circle-user"></i> John Cena</h4>
+                        <span class="meta-date">Posted at: 11.11.2022</span>
+                    </header>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus molestias fugiat
+                        blanditiis saepe nam dolor, ab nemo adipisci exercitationem quia debitis dolore mollitia!
+                        Quod eligendi quisquam officia temporibus cupiditate qui?
+                    </p>
+                </article>
+
+                <article class="comment-wrapper">
+                    <header class="author-post">
+                        <h4><i class="fa-regular fa-circle-user"></i> John Cena</h4>
+                        <span class="meta-date">Posted at: 11.11.2022</span>
+                    </header>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus molestias fugiat
+                        blanditiis saepe nam dolor, ab nemo adipisci exercitationem quia debitis dolore mollitia!
+                        Quod eligendi quisquam officia temporibus cupiditate qui?
+                    </p>
+                </article>
+
+                <article class="comment-wrapper">
+                    <header class="author-post">
+                        <h4><i class="fa-regular fa-circle-user"></i> John Cena</h4>
+                        <span class="meta-date">Posted at: 11.11.2022</span>
+                    </header>
+
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus molestias fugiat
+                        blanditiis saepe nam dolor, ab nemo adipisci exercitationem quia debitis dolore mollitia!
+                        Quod eligendi quisquam officia temporibus cupiditate qui?
+                    </p>
+                </article>
+            </div>
+
+        </section>
+
+        <!--Submit Comment-->
+        <section class="submit-comment">
+            <h3>Leave a Comment</h3>
+            <form>
+                <div class="row">
+                    <div>
+                        <textarea class="u-full-width" id="comment" class="form-control mb-4"
+                            name="comment" placeholder="Write your comment here"></textarea>
+                    </div>
+
+                    <div>
+                        <input class="btn" type="submit" value="Comment">
+                    </div>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <hr>
+
+    <!-- Site Footer -->
+    <footer class="site-footer site">
+        <p>&copy; 2023 All rights reserved.</p>
+
+        <ul class="socials">
+            <li><a href="#"><i class="fa-brands fa-meta"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

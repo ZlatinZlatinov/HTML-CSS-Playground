@@ -16,6 +16,9 @@
 @import url(slider.css); 
 
 /* ---- Auth Forms ---- */ 
-@import url(formcontainer.css);
+@import url(formcontainer.css); 
+
+/* ---- Details ---- */ 
+@import url(book-details.css);
 
 
