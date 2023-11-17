@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="styles/style.css">
+    <title>Book Reviews</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <header class="site-header site">
+        <!-- Logo -->
+        <p class="site-logo">
+            <a href="#"><img src="images/logo2b.png" alt="site-logo"></a>
+        </p>
+
+        <!-- Navigation -->
+        <nav class="main-nav">
+            <ul>
+                <li><a href="idex.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="catalog.html">Catalog</a></li>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+
+        <!-- User Icon -->
+        <div class="user">
+            <ul class="user-icon">
+                <li><a href="#" class="icn"><i class="fa-regular fa-circle-user"></a></i>
+                    <ul>
+                        <li><a href="#">Create</a></li>
+                        <li><a href="#">My Profile</a></li>
+                        <li><a href="#">My Favourites</a></li>
+                        <li><a href="#">Logout</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <hr>
+
+    <!-- Main -->
+    <main class="site-main site">
+
+        <section class="form-container">
+
+            <form action="">
+                <h3>Create Book Review</h3>
+
+                <!--Title-->
+                <label>Title</label>
+                <input type="text" name="title" class="box" formControlName="title">
+                <span class="error">
+                    Book title is required with atleast 3 characters length
+                </span>
+
+                <!--Author-->
+                <label>Author</label>
+                <input type="text" name="author" class="box">
+                <span class="error">
+                    Book author is required with atleast 5 characters length
+                </span>
+
+                <!--Genre-->
+                <label>Genre</label>
+                <input type="text" name="genre" class="box">
+                <span class="error">
+                    Book genre is required with atleast 4 characters length
+                </span>
+
+                <!--Publisher-->
+                <label>Publisher</label>
+                <input type="text" name="publisher" class="box">
+                <span class="error">
+                    Book publisher is required with atleast 4 characters length
+                </span>
+
+                <!--Pages-->
+                <label>Pages</label>
+                <input type="number" name="pages" class="box">
+                <span class="error">
+                    Book pages are required
+                </span>
+
+                <!--Image-->
+                <label>Upload Image</label>
+                <input type="file" name="img" class="box">
+                <span class="error">
+                    Only .png and .jpeg files are supported!
+                </span>
+
+                <!--Description-->
+                <label>Description</label>
+                <textarea class="box" name="description"></textarea>
+                <span class="error">
+                    Book description is required with atleast 20 charactes length
+                </span>
+
+
+                <input type="submit" value="Create" class="btn">
+            </form>
+        </section>
+
+    </main>
+
+    <hr>
+
+    <!-- Site Footer -->
+    <footer class="site-footer site">
+        <p>&copy; 2023 All rights reserved.</p>
+
+        <ul class="socials">
+            <li><a href="#"><i class="fa-brands fa-meta"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-youtube"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-x-twitter"></i></a></li>
+            <li><a href="#"><i class="fa-brands fa-linkedin-in"></i></a></li>
+        </ul>
+    </footer>
+
+</body>
+
+</html>

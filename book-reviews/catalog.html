@@ -9,7 +9,6 @@
         integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" href="styles/slider.css">
     <title>Book Reviews</title>
 </head>
 
@@ -26,7 +25,7 @@
         <nav class="main-nav">
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="#">About</a></li>
+                <li><a href="about.html">About</a></li>
                 <li><a href="#">Catalog</a></li>
                 <li><a href="login.html">Login</a></li>
                 <li><a href="register.html">Register</a></li>
@@ -38,7 +37,7 @@
             <ul class="user-icon">
                 <li><a href="#" class="icn"><i class="fa-regular fa-circle-user"></a></i>
                     <ul>
-                        <li><a href="#">Create</a></li>
+                        <li><a href="create.html">Create</a></li>
                         <li><a href="#">My Profile</a></li>
                         <li><a href="#">My Favourites</a></li>
                         <li><a href="#">Logout</a></li>
@@ -50,146 +49,151 @@
     <hr>
 
     <!-- Main Content -->
-    <div class="main-content">
-        <main class="site-main">
-            <!-- Options Bar -->
-            <div class="options-bar">
-                <div class="sort-by">
-                    <span>Sort by:</span>
-                    <select name="sort-by" id="sort">
-                        <option value="newest">New Releases</option>
-                        <option value="alphabetical">Alphabetically</option>
-                        <option value="rating-lowest">Rating Lowest</option>
-                        <option value="rating-highest">Rating Highest</option>
-                    </select>
+    <div class="background-img">
+        <div class="main-content site">
+            <main class="site-main">
+                
+                <!-- Options Bar -->
+                <div class="options-bar">
+                    <div class="sort-by">
+                        <span>Sort by:</span>
+                        <select name="sort-by" id="sort">
+                            <option value="newest">New Releases</option>
+                            <option value="alphabetical">Alphabetically</option>
+                            <option value="rating-lowest">Rating Lowest</option>
+                            <option value="rating-highest">Rating Highest</option>
+                        </select>
+                    </div>
+    
+                    <h2>Catalog <i class="fa-solid fa-angle-right"></i> All</h2>
+                    <!-- Search Bar-->
+                    <form action="" class="search-bar">
+                        <input type="text" placeholder="Search.." name="search">
+                        <button type="submit"><i class="fa fa-search"></i></button>
+                    </form>
                 </div>
-
-                <h2>Catalog <i class="fa-solid fa-angle-right"></i> All</h2>
-                <!-- Search Bar-->
-                <form action="" class="search-bar">
-                    <input type="text" placeholder="Search.." name="search">
-                    <button type="submit"><i class="fa fa-search"></i></button>
-                </form>
-            </div>
-
-            <section class="books">
-
-                <figure class="card">
-                    <img src="https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/k/r/4a0294e4fa392c09c7d02252e9ca4bec/kratki-otgovori-na-golemite-vaprosi-30.jpg"
-                        alt="kratki-otgovori-na-golemite-vaprosi">
-
-                    <figcaption>
-                        <h3 class="card-title">Кратки отговори на големите въпроси</h3>
-                        <p class="card-author">Стивън Хокинг</p>
-                        <p><a href="details.html" class="btn-read">View Details</a></p>
-                    </figcaption>
-                </figure>
-
-                <figure class="card">
-                    <img src="https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/b/o/19e4252e8fcda93b6f9f8aab731e0c70/bozhestvenoto-uravnenie-30.jpg"
-                        alt="bozhestvenoto-uravnenie">
-
-                    <figcaption>
-                        <h3 class="card-title">Божественото уравнение</h3>
-                        <p class="card-author">Мичио Каку</p>
-                        <p><a href="details.html" class="btn-read">View Details</a></p>
-                    </figcaption>
-                </figure>
-
-                <figure class="card">
-                    <img src="https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/i/z/347ad3413d9ef8fadec6c8082005a67f/izkustveniyat-intelekt-30.jpg"
-                        alt="izkustveniyat-intelekt">
-
-                    <figcaption>
-                        <h3 class="card-title">Божественото уравнение</h3>
-                        <p class="card-author">Мариана Тодорова</p>
-                        <p><a href="details.html" class="btn-read">View Details</a></p>
-                    </figcaption>
-                </figure>
-
-                <figure class="card">
-                    <img src="https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/t/i/3936b2d0eec9a6cbf3e3a13d078e482c/tim-kuk---geniyat--koyto-izdigna-apple-na-po-visoko-nivo-30.jpg"
-                        alt="tim-kuk---geniyat--koyto-izdigna-apple-na-po-visoko-nivo">
-
-                    <figcaption>
-                        <h3 class="card-title">Тим Кук – геният, който издигна Apple на по-високо ниво</h3>
-                        <p class="card-author">Лиандър Кейни</p>
-                        <p><a href="details.html" class="btn-read">View Details</a></p>
-                    </figcaption>
-                </figure>
-
-                <figure class="card">
-                    <img src="https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/g/o/19c38c7772a99211a5d90397ccf31462/golemite-mitove-na-vtorata-svetovna-voyna-e-kniga-30.jpg"
-                        alt="golemite-mitove-na-vtorata-svetovna-voyna-e-kniga">
-
-                    <figcaption>
-                        <h3 class="card-title">Големите митове на Втората световна война</h3>
-                        <p class="card-author">Жан Лопес, Оливие Виевиорка</p>
-                        <p><a href="details.html" class="btn-read">View Details</a></p>
-                    </figcaption>
-                </figure>
-
-                <figure class="card">
-                    <img src="https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/v/e/628f8b2519e75ab3efa7529b588b5c8a/veshterat-1--poslednoto-zhelanie-31.jpg"
-                        alt="veshterat-1--poslednoto-zhelanie">
-
-                    <figcaption>
-                        <h3 class="card-title">Вещерът 1: Последното желание</h3>
-                        <p class="card-author">Анджей Сапковски</p>
-                        <p><a href="details.html" class="btn-read">View Details</a></p>
-                    </figcaption>
-                </figure>
-
-                <figure class="card">
-                    <img src="https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/g/o/ec71f8d5aeca59f5f48dfe2f28777f34/golyamata-bitka-za-kosmosa-30.jpg"
-                        alt="golyamata-bitka-za-kosmosa">
-
-                    <figcaption>
-                        <h3 class="card-title">Голямата битка за Космоса</h3>
-                        <p class="card-author">Крисчън Девънпорт</p>
-                        <p><a href="details.html" class="btn-read">View Details</a></p>
-                    </figcaption>
-                </figure>
-
-                <figure class="card">
-                    <img src="https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/i/s/971bf99926bd7225455002f2fc05ddb7/istoriya-slavyanobalgarska-luksozno-fototipno-izdanie-30.jpg"
-                        alt="istoriya-slavyanobalgarska">
-
-                    <figcaption>
-                        <h3 class="card-title">История славянобългарска</h3>
-                        <p class="card-author">Паисий Хилендарски</p>
-                        <p><a href="details.html" class="btn-read">View Details</a></p>
-                    </figcaption>
-                </figure>
-            </section>
-
-            <div class="pagination">
-                <ul>
-                    <li><a href="#">1</a></li>
-                    <li><a href="#">2</a></li>
-                    <li><a href="#">3</a></li>
-                    <li><a href="#">...</a></li>
-                    <li><a href="#">30</a></li>
+    
+                <!-- Books -->
+                <section class="books">
+    
+                    <figure class="card">
+                        <img src="https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/k/r/4a0294e4fa392c09c7d02252e9ca4bec/kratki-otgovori-na-golemite-vaprosi-30.jpg"
+                            alt="kratki-otgovori-na-golemite-vaprosi">
+    
+                        <figcaption>
+                            <h3 class="card-title">Кратки отговори на големите въпроси</h3>
+                            <p class="card-author">Стивън Хокинг</p>
+                            <p><a href="details.html" class="btn-read">View Details</a></p>
+                        </figcaption>
+                    </figure>
+    
+                    <figure class="card">
+                        <img src="https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/b/o/19e4252e8fcda93b6f9f8aab731e0c70/bozhestvenoto-uravnenie-30.jpg"
+                            alt="bozhestvenoto-uravnenie">
+    
+                        <figcaption>
+                            <h3 class="card-title">Божественото уравнение</h3>
+                            <p class="card-author">Мичио Каку</p>
+                            <p><a href="details.html" class="btn-read">View Details</a></p>
+                        </figcaption>
+                    </figure>
+    
+                    <figure class="card">
+                        <img src="https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/i/z/347ad3413d9ef8fadec6c8082005a67f/izkustveniyat-intelekt-30.jpg"
+                            alt="izkustveniyat-intelekt">
+    
+                        <figcaption>
+                            <h3 class="card-title">Изкуственият Интелект</h3>
+                            <p class="card-author">Мариана Тодорова</p>
+                            <p><a href="details.html" class="btn-read">View Details</a></p>
+                        </figcaption>
+                    </figure>
+    
+                    <figure class="card">
+                        <img src="https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/t/i/3936b2d0eec9a6cbf3e3a13d078e482c/tim-kuk---geniyat--koyto-izdigna-apple-na-po-visoko-nivo-30.jpg"
+                            alt="tim-kuk---geniyat--koyto-izdigna-apple-na-po-visoko-nivo">
+    
+                        <figcaption>
+                            <h3 class="card-title">Тим Кук – геният, който издигна Apple на по-високо ниво</h3>
+                            <p class="card-author">Лиандър Кейни</p>
+                            <p><a href="details.html" class="btn-read">View Details</a></p>
+                        </figcaption>
+                    </figure>
+    
+                    <figure class="card">
+                        <img src="https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/g/o/19c38c7772a99211a5d90397ccf31462/golemite-mitove-na-vtorata-svetovna-voyna-e-kniga-30.jpg"
+                            alt="golemite-mitove-na-vtorata-svetovna-voyna-e-kniga">
+    
+                        <figcaption>
+                            <h3 class="card-title">Големите митове на Втората световна война</h3>
+                            <p class="card-author">Жан Лопес, Оливие Виевиорка</p>
+                            <p><a href="details.html" class="btn-read">View Details</a></p>
+                        </figcaption>
+                    </figure>
+    
+                    <figure class="card">
+                        <img src="https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/v/e/628f8b2519e75ab3efa7529b588b5c8a/veshterat-1--poslednoto-zhelanie-31.jpg"
+                            alt="veshterat-1--poslednoto-zhelanie">
+    
+                        <figcaption>
+                            <h3 class="card-title">Вещерът 1: Последното желание</h3>
+                            <p class="card-author">Анджей Сапковски</p>
+                            <p><a href="details.html" class="btn-read">View Details</a></p>
+                        </figcaption>
+                    </figure>
+    
+                    <figure class="card">
+                        <img src="https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/g/o/ec71f8d5aeca59f5f48dfe2f28777f34/golyamata-bitka-za-kosmosa-30.jpg"
+                            alt="golyamata-bitka-za-kosmosa">
+    
+                        <figcaption>
+                            <h3 class="card-title">Голямата битка за Космоса</h3>
+                            <p class="card-author">Крисчън Девънпорт</p>
+                            <p><a href="details.html" class="btn-read">View Details</a></p>
+                        </figcaption>
+                    </figure>
+    
+                    <figure class="card">
+                        <img src="https://cdn.ozone.bg/media/catalog/product/cache/1/image/a4e40ebdc3e371adff845072e1c73f37/i/s/971bf99926bd7225455002f2fc05ddb7/istoriya-slavyanobalgarska-luksozno-fototipno-izdanie-30.jpg"
+                            alt="istoriya-slavyanobalgarska">
+    
+                        <figcaption>
+                            <h3 class="card-title">История славянобългарска</h3>
+                            <p class="card-author">Паисий Хилендарски</p>
+                            <p><a href="details.html" class="btn-read">View Details</a></p>
+                        </figcaption>
+                    </figure>
+                </section>
+    
+                <!-- Pagination -->
+                <div class="pagination">
+                    <ul>
+                        <li><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">...</a></li>
+                        <li><a href="#">30</a></li>
+                    </ul>
+                </div>
+            </main>
+    
+            <!-- Sidebar -->
+            <aside class="site-sidebar">
+                <h2>Choose Genre</h2>
+    
+                <ul class="genres">
+                    <li><a href="#">Science Fiction</a></li>
+                    <li><a href="#">Poetry</a></li>
+                    <li><a href="#">Busines</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">Science</a></li>
+                    <li><a href="#">Thrillers</a></li>
+                    <li><a href="#">Sports</a></li>
+                    <li><a href="#">Hobbies</a></li>
+                    <li><a href="#">Biographies</a></li>
                 </ul>
-            </div>
-        </main>
-
-        <!-- Sidebar -->
-        <aside class="site-sidebar">
-            <h2>Choose Genre</h2>
-
-            <ul class="genres">
-                <li><a href="#">Science Fiction</a></li>
-                <li><a href="#">Poetry</a></li>
-                <li><a href="#">Busines</a></li>
-                <li><a href="#">History</a></li>
-                <li><a href="#">Science</a></li>
-                <li><a href="#">Thrillers</a></li>
-                <li><a href="#">Sports</a></li>
-                <li><a href="#">Hobbies</a></li>
-                <li><a href="#">Biographies</a></li>
-            </ul>
-        </aside>
+            </aside>
+        </div>
     </div>
 
     <hr>
