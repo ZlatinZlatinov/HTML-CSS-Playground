@@ -21,4 +21,7 @@
 /* ---- Details ---- */ 
 @import url(book-details.css);
 
+/* ---- Favourites ---- */ 
+
+@import url(favourites.css);
 

@@ -60,23 +60,6 @@
     color: #fff;
 } 
 
-/* 
-#slides .slide_1 {
-    background-color: #00171F;
-}
-
-#slides .slide_2 {
-    background-color: #003459;
-}
-
-#slides .slide_3 {
-    background-color: #007EA7;
-}
-
-#slides .slide_4 {
-    background-color: #00A8E8;
-}  */
-
 #controls {
     margin-top: -130px;
     width: 100%;
@@ -162,7 +145,7 @@
 } 
 
 .slide-img {
-    flex-basis: 30%;
+    flex-basis: 25%;
 } 
 
 .slide-img img {

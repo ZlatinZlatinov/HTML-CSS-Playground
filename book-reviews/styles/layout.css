@@ -2,7 +2,6 @@
 
 body {
     background-color: #f3f2ec;
-
 }
 
 p,
@@ -14,19 +13,12 @@ ol {
 .site {
     max-width: 80vw;
     margin: 0 auto;
+    background-color: #f3f2ec;
 }
 
 .site-main {
     padding: 4em 0em;
 }
-
-/* Catalog */
-
-.main-content {
-    display: flex;
-    background-color: #f3f2ec;
-}
-
 
 /*---- Sidebar ----*/
 .site-sidebar {
@@ -61,6 +53,11 @@ ol {
 }
 
 /*---- Catalog ---- */
+.main-content {
+    display: flex;
+    opacity: 0.96;
+}
+
 .background-img {
     background-image: url('../images/valdemaras-d-7VPFyhB_j8Y-unsplash.jpg');
     background-position: center;
@@ -74,10 +71,7 @@ ol {
     flex-basis: 76%;
     flex-grow: 1;
     flex-shrink: 1;
-    /* width: 100vw; */
-    /* ?height: 100vh; */
     padding: 2em;
-    /* overflow: scroll; */
 }
 
 .site-main .books {
@@ -146,7 +140,6 @@ ol {
     margin: 0 auto;
     list-style: none;
     display: flex;
-    /* gap: 1em; */
 }
 
 .pagination ul li {
@@ -190,7 +183,6 @@ select {
 .search-bar input {
     padding: 0.2em;
     font-size: 0.9em;
-    /* border-radius: 5px; */
     border: none;
     border-top-left-radius: 5px;
     border-bottom-left-radius: 5px;
@@ -233,4 +225,12 @@ select {
 .site-footer ul a {
     text-decoration: none;
     color: #000;
-}
+} 
+
+/* ---- 404 ---- */ 
+
+.not-found {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
