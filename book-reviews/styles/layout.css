@@ -78,6 +78,9 @@ ol {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
+    /* display: grid;  */
+    /* grid-template-columns: auto auto auto auto; */
+    /* grid-template-columns: repeat(auto-fill, minmax(20%, 1fr)); */
     gap: 2em;
 }
 
@@ -98,7 +101,9 @@ ol {
 }
 
 .card .card-img {
-    padding: 2em 2.5em;
+    /* padding: 2em 2.5em; */
+    width: 240px;
+    height: 370px;
     background-color: #efeee8;
 }
 
@@ -225,12 +230,58 @@ select {
 .site-footer ul a {
     text-decoration: none;
     color: #000;
-} 
+}
 
-/* ---- 404 ---- */ 
+/* ---- About ---- */
+.about {
+    text-align: center;
+}
+
+.about h2 {
+    font-size: 2em;
+    color: #777;
+    margin-bottom: 1.5em;
+}
+
+.about p {
+    font-size: 1.2em;
+    flex-basis: 55%;
+    text-align: justify;
+}
+
+.about p:first-child {
+    text-indent: 1.5em;
+}
+
+.about div {
+    flex-basis: 55%;
+}
+
+.about article {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2em;
+    padding-bottom: 2em;
+    margin-bottom: 2em;
+    border-bottom: 1px solid #dea556;
+}
+
+.about .left {
+    order: -1;
+}
+
+.about img {
+    width: 20%;
+    height: 30%;
+    flex-basis: 25%;
+    object-fit: contain;
+}
+
+/* ---- 404 ---- */
 
 .not-found {
     display: flex;
     align-items: center;
     justify-content: center;
-} 
+}
